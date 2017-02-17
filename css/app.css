@@ -1,0 +1,162 @@
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1 {
+  color: #ffffff;
+  font: 800 70px/1 'Montserrat', sans-serif;
+  margin: 0;
+}
+.h1 {font: 800 70px/1 'Montserrat', sans-serif;}
+.magenta {color: #a066c9;}
+
+h2 {
+  color: #0d113d;
+  font: 600 33px/26px 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h3 {
+  color: #0d113d;
+  font: 600 26px/1 'Montserrat', sans-serif;
+}
+
+.bordered {
+  padding: 8px 0 8px 18px;
+  position: relative;
+}
+
+.bordered:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #753d9d;
+  border-radius: 1px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #0d113d;
+  font: 300 15px/26px 'Montserrat', sans-serif;
+  margin: 0;
+}
+span {display: inline-block;}
+a {
+  color: #fff;
+  transition: color ease-in-out 0.2s;
+}
+
+
+.top-screen {
+  background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+}
+
+.header {
+  padding-top: 45px;
+  padding-bottom: 45px;;
+}
+.logo-holder {
+}
+.header nav {
+}
+.header ul {
+  font-size: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.header li {
+  color: #fff;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 20px;
+}
+.header li:last-child {margin-right: 0;}
+
+
+.header li a {
+  color: inherit;
+  font: 400 15px/26px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.header li.active,
+.header li:hover {
+  color: #753d9d;
+}
+
+
+
+.page-title {
+  padding: 225px 0 185px;
+}
+.page-title h1 {
+  display: inline-block;
+}
+.page-title p {
+  color: #fff;
+  margin: 40px 0 55px;
+}
+
+.btns-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 555px;
+}
+.btns-holder .bordered-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 262px;
+  max-width: 262px;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  height: 65px;
+  text-transform: uppercase;
+}
+.bordered-btn.white-btn {
+  border-color: #ffffff;
+  color: #ffffff;
+  transition: background-color ease-in-out 0.2s, border-color ease-in-out 0.2s;
+}
+.bordered-btn.white-btn:hover {
+  background-color: #753d9d;
+  border-color: transparent;
+}
+
+
+.intro {
+  border-bottom: 3px solid #e0e0e0;
+  padding: 70px 0;
+}
+.article-title {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 44px;
+  margin-bottom: 40px;
+}
+.article-title .dark {
+  color: #0d113d;
+  font-weight: 600;
+}
+.article-title .light {
+  color: #753d9d;
+  font-weight: 600;
+}
+
+.intro .img-holder {
+  border-radius: 4px;
+  overflow: hidden;
+}
