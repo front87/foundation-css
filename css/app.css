@@ -21,6 +21,7 @@ h2 {
 h3 {
   color: #0d113d;
   font: 600 26px/1 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 .padding-border {
   border-bottom: 3px solid #e0e0e0;
@@ -296,4 +297,41 @@ a {
   left: 25px;
   bottom: 25px;
   z-index: 3;
+}
+
+
+.blog-block {
+  padding: 80px 0;
+}
+.blog-block h3 {
+  margin-bottom: 35px;
+}
+.blog-block .blog-row {
+  padding: 35px 0;
+  border-bottom: 1px solid #f2f2f2;
+  flex-wrap: wrap;
+}
+.blog-block .blog-link {
+  color: #753d9d;
+  font: 600 18px/1.3 'Montserrat', sans-serif;
+  flex: 1 1 auto;
+  max-width: 765px;
+  padding-right: 15px;
+}
+.blog-block .blog-details {
+  flex: 1 0 auto;
+  max-width: 375px;
+  padding-left: 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-details p {
+  color: #a2a2a2;
+  font: 400 16px/1 'Montserrat', sans-serif;
+}
+.blog-details .autor-link {
+  color: #0d113d;
+  font: 400 16px/1 'Montserrat', sans-serif;
 }
