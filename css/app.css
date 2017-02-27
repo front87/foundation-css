@@ -352,6 +352,7 @@ a {
   position: relative;
   overflow: hidden;
 }
+.slide-wrapper:hover .img-border-wrapper:after {background-color: transparent;}
 .portfolio-slider .img-border-wrapper:after {
   background-color: rgba(25, 11, 35, 0.6);
   content: '';
@@ -359,6 +360,7 @@ a {
   left: 0;
   top: 0;
   height: 100%;
+  transition: background-color ease-in-out 0.2s;
   width: 100%;
 }
 .portfolio-slider .slick-arrow {
