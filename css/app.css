@@ -335,3 +335,50 @@ a {
   color: #0d113d;
   font: 400 16px/1 'Montserrat', sans-serif;
 }
+
+
+.portfolio {
+  margin-top: 70px;
+  position: relative;
+}
+.portfolio h3 {margin-bottom: 45px;}
+
+.portfolio-slider.slick-slider {position: static;}
+.portfolio-slider .slick-list {margin: 0 -15px;}
+.portfolio-slider .slide-wrapper {padding: 0 15px;}
+
+.portfolio-slider .img-border-wrapper {
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-slider .img-border-wrapper:after {
+  background-color: rgba(25, 11, 35, 0.6);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.portfolio-slider .slick-arrow {
+  cursor: pointer;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  width: 30px;
+}
+.portfolio-slider .slick-prev {
+  background: url(../img/portfolio-prev-btn.png) 50%;
+  color: transparent;
+  font-size: 0;
+  right: 55px;
+}
+.portfolio-slider .slick-next {
+  background: url(../img/portfolio-next-btn.png) 50%;
+  color: transparent;
+  font-size: 0;
+  right: 15px;
+}
+.slick-slide img {width: 100%;}
+
