@@ -95,17 +95,64 @@ a {
 
 
 .top-screen {
-  background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+  /*background: url(../img/head-bg.jpg) 50%/cover no-repeat;*/
+  position: relative;
 }
 
+/*  header slider */
+.header-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
 .header {
   padding-top: 45px;
-  padding-bottom: 45px;;
+  padding-bottom: 45px;
 }
-.logo-holder {
+
+.header-slider .slick-slider {
+  position: absolute;
+  height: 100%;
 }
-.header nav {
+.header-slider .slide-wrap {
+  height: 100%;
+  min-height: 830px;
 }
+.slide-wrap.slide-1 {background: url(../img/head-bg.jpg) 50%/cover;}
+.slide-wrap.slide-2 {background: url(../img/head-bg2.jpg) 50%/cover;}
+.slide-wrap.slide-3 {background: url(../img/head-bg3.jpg) 50%/cover;}
+
+.slick-dots {
+  position: absolute;
+  bottom: 30px;
+  left:50%;
+  transform: translateX(-50%);
+}
+.slick-dots:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.slick-dots li {
+  float: left;
+  margin-right: 14px;
+
+}
+.slick-dots button {
+  background-color: rgba(251, 251, 251, 0.4);
+  border-radius: 7px;
+  height: 7px;
+  font-size: 0;
+  color: transparent;
+  width: 68px;
+}
+.slick-dots li.slick-active button {
+  background-color: #753d9d;
+}
+/*  header slider end */
+
+.content-wrapper {position: relative;}
 .header ul {
   font-size: 0;
   padding-top: 10px;
@@ -290,9 +337,15 @@ a {
   background: rgba(117,61,157,0.6);
   height: 100%;
 }
+.services-block-items.service-1 {background: url(../img/service-pic1.jpg) no-repeat 50%/cover;}
+.services-block-items.service-2 {background: url(../img/service-pic2.jpg) no-repeat 50%/cover;}
+.services-block-items.service-3 {background: url(../img/service-pic3.jpg) no-repeat 50%/cover;}
+.services-block-items.service-4 {background: url(../img/service-pic4.jpg) no-repeat 50%/cover;}
+.services-block-items.service-5 {background: url(../img/service-pic5.jpg) no-repeat 50%/cover;}
 .services-block-items img {
   display: inline-block;
   height: 100%;
+  display: none;
 }
 .services-block-items .service-article {
   color: #fff;
@@ -416,3 +469,11 @@ a {
 }
 .slick-slide img {width: 100%;}
 
+
+
+@media screen and (max-width:1170px) {
+  .header-slider {display: none;}
+  .top-screen {
+    background: url(../img/head-bg.jpg) 50%/cover no-repeat;
+  }
+}
