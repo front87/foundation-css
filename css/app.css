@@ -95,8 +95,7 @@ a {
 
 
 .top-screen {
-  /*background: url(../img/head-bg.jpg) 50%/cover no-repeat;*/
-  position: relative;
+  background: url(../img/head-bg.jpg) 50%/cover no-repeat;
 }
 
 /*  header slider */
